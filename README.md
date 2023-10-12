@@ -3,23 +3,7 @@ Overview
 
 This project sets up a Semantic Search system using a combination of technologies, including Milvus as the vector database and HNSW indexing for efficient vector search. Below, we delve into the technical details of each component and how they work together.
 Components
-ETCD
 
-ETCD is a distributed key-value store used for configuration management and service discovery. In this setup, it plays a crucial role in managing the configuration parameters of the Semantic Search system.
-
-    Container Name: milvus-etcd
-    Port: 2379
-    Function: ETCD helps store and manage configuration settings, which can be utilized by other services in the system.
-
-Minio
-
-Minio is a high-performance object storage server, serving as a data repository for this Semantic Search system. It stores the vectors and data used for search operations.
-
-    Container Name: milvus-minio
-    Access Key: minioadmin
-    Secret Key: minioadmin
-    Port: 9000
-    Function: Minio stores the data required for vector retrieval and similarity search operations. It is accessible to Milvus and your application.
 
 Milvus
 
